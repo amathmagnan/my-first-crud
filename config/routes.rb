@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
 
 root to: 'pages#home'
 
-get '/salut/:name', to: 'pages#salut'
+get '/bonjour(/:name)', to: 'pages#salut', as: 'salut'
+
+resources :posts
 
 end
