@@ -5,12 +5,15 @@ class PagesController < ApplicationController
 
 def salut
 
-  puts params[:name].inspect
+  @name = params[:name]
 
   end
 
 
 def home
+
+
+  @name = params[:name]
 
 end
 

@@ -4,6 +4,6 @@ Rails.application.routes.draw do
 
 root to: 'pages#home'
 
-get '/salut/:name', to: 'pages#salut'
+get '/salut', to: 'pages#salut'
 
 end
